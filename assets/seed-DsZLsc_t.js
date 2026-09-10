@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-CrwvHwMI.js";var n=`sample-classroom-demo`,r=12;async function i(){try{let i=await t(n);if(i&&i.questions.length>=r)return;let a=await fetch(`./examples/classroom-warmup.rally.json`,{cache:`no-store`});if(!a.ok)return;await e(await a.text())}catch{}}export{i as seedSampleQuizIfEmpty};

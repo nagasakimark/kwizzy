@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "sample-classroom-demo",
+  "title": "All question types demo",
+  "description": "Sample Kwizzy quiz covering every question type",
+  "cover": { "kind": "color", "value": "#46178F" },
+  "updatedAt": 1740000000000,
+  "questions": [
+    {
+      "id": "q1",
+      "type": "quiz",
+      "prompt": "Which planet is known as the Red Planet?",
+      "timeLimitSec": 20,
+      "pointsMode": "standard",
+      "options": [
+        { "id": "a", "text": "Venus" },
+        { "id": "b", "text": "Mars" },
+        { "id": "c", "text": "Jupiter" },
+        { "id": "d", "text": "Mercury" }
+      ],
+      "correctIds": ["b"]
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "The Pacific Ocean is the largest ocean on Earth.",
+      "timeLimitSec": 15,
+      "pointsMode": "standard",
+      "correct": true
+    },
+    {
+      "id": "q3",
+      "type": "puzzle",
+      "prompt": "Order these steps of the water cycle",
+      "timeLimitSec": 30,
+      "pointsMode": "standard",
+      "items": [
+        { "id": "i1", "text": "Evaporation" },
+        { "id": "i2", "text": "Condensation" },
+        { "id": "i3", "text": "Precipitation" },
+        { "id": "i4", "text": "Collection" }
+      ],
+      "correctOrder": ["i1", "i2", "i3", "i4"]
+    },
+    {
+      "id": "q4",
+      "type": "typeAnswer",
+      "prompt": "What gas do plants absorb for photosynthesis?",
+      "timeLimitSec": 25,
+      "pointsMode": "standard",
+      "acceptedAnswers": ["carbon dioxide", "co2", "CO2"]
+    },
+    {
+      "id": "q5",
+      "type": "slider",
+      "prompt": "About how many bones are in an adult human body?",
+      "timeLimitSec": 25,
+      "pointsMode": "standard",
+      "min": 100,
+      "max": 300,
+      "step": 1,
+      "correctValue": 206,
+      "tolerance": 10,
+      "unit": "bones"
+    },
+    {
+      "id": "q5b",
+      "type": "pinAnswer",
+      "prompt": "Tap the red target on the image",
+      "timeLimitSec": 25,
+      "pointsMode": "standard",
+      "imageDataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNjQwIDQwMCI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMxYTFhMmUiLz48cmVjdCB4PSI0MCIgeT0iNDAiIHdpZHRoPSI1NjAiIGhlaWdodD0iMzIwIiByeD0iMjQiIGZpbGw9IiM0NjE3OGYiLz48Y2lyY2xlIGN4PSI0MjAiIGN5PSIxNjAiIHI9IjQ4IiBmaWxsPSIjZTIxYjNjIi8+PHRleHQgeD0iODAiIHk9IjEwMCIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj5XaGVyZSBpcyB0aGUgcmVkIHRhcmdldD88L3RleHQ+PHRleHQgeD0iODAiIHk9IjM0MCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjcpIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCI+VGFwIHRoZSBjaXJjbGU8L3RleHQ+PC9zdmc+",
+      "hotspot": { "shape": "ellipse", "cx": 0.656, "cy": 0.4, "rx": 0.1, "ry": 0.1 }
+    },
+    {
+      "id": "q6",
+      "type": "poll",
+      "prompt": "Which study method works best for you?",
+      "timeLimitSec": 20,
+      "pointsMode": "none",
+      "options": [
+        { "id": "p1", "text": "Flashcards" },
+        { "id": "p2", "text": "Practice tests" },
+        { "id": "p3", "text": "Group study" },
+        { "id": "p4", "text": "Teaching others" }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "wordCloud",
+      "prompt": "One word for today's energy",
+      "timeLimitSec": 20,
+      "pointsMode": "none",
+      "maxLength": 16
+    },
+    {
+      "id": "q8",
+      "type": "openEnded",
+      "prompt": "What is one goal you have this week?",
+      "timeLimitSec": 40,
+      "pointsMode": "none",
+      "maxLength": 160
+    },
+    {
+      "id": "q9",
+      "type": "scale",
+      "prompt": "Rate these statements",
+      "timeLimitSec": 40,
+      "pointsMode": "none",
+      "min": 1,
+      "max": 5,
+      "minLabel": "Disagree",
+      "maxLabel": "Agree",
+      "statements": ["I feel ready for the lesson", "I slept well last night"]
+    },
+    {
+      "id": "q10",
+      "type": "nps",
+      "prompt": "How likely are you to recommend this class to a friend?",
+      "timeLimitSec": 20,
+      "pointsMode": "none"
+    },
+    {
+      "id": "q11",
+      "type": "brainstorm",
+      "prompt": "Ideas to make group projects fairer",
+      "timeLimitSec": 60,
+      "pointsMode": "none",
+      "maxIdeas": 3,
+      "maxLength": 40
+    }
+  ]
+}

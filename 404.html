@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kwizzy</title>
+    <script>
+      // GitHub Pages has no server rewrite — map path joins to HashRouter.
+      (function () {
+        var path = location.pathname || ''
+        var join = path.match(/^(.*?)\/join\/(\d{1,8})\/?$/i)
+        if (join) {
+          var base = join[1] || ''
+          location.replace(base + '/#/join/' + join[2] + (location.search || ''))
+          return
+        }
+        // Fallback: send unknown paths to the app root hash
+        var root = path.replace(/\/[^/]*$/, '')
+        if (!root || root === path) root = path.replace(/\/$/, '') || ''
+        location.replace((root || '') + '/#' + (location.search || ''))
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>
